@@ -2,8 +2,11 @@ import { useRef, useState } from "react";
 import useFetch from "../hooks/useFetch";
 import { useNavigate } from "react-router-dom";
 import React from "react";
-import { IDay } from "./DayList";
 
+export interface IDay {
+  id: number;
+  day: string;
+}
 const CreateWord = () => {
   const days: IDay[] = useFetch("http://localhost:3001/days");
   const navigate = useNavigate();
