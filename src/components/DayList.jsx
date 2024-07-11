@@ -9,7 +9,7 @@ const DayList = () => {
   }
 
   return (
-    <>
+    <div>
       <ul className="list_day">
         {days.map((day) => (
           <li key={day.id}>
@@ -17,7 +17,7 @@ const DayList = () => {
           </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 };
 
