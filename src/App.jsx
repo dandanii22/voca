@@ -2,7 +2,6 @@ import CreateDay from "./components/CreateDay";
 import CreateWord from "./components/CreateWord";
 import Day from "./components/Day";
 import DayList from "./components/DayList";
-import DelDay from "./components/DelDay";
 import EmptyPage from "./components/EmptyPage";
 import Header from "./components/Header";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
