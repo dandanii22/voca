@@ -109,10 +109,19 @@ table td:first-child {
   background-color: firebrick;
 }
 
-.backbtn {
-  margin-top: 30px;
+.btnwrap {
   position: absolute;
   right: 450px;
+}
+.backbtn {
+  margin-top: 30px;
+}
+.backbtn:first-child {
+  margin-right: 10px;
+}
+
+.closebtn {
+  margin-left: 10px;
 }
 
 button {

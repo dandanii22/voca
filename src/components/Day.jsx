@@ -9,6 +9,7 @@ const Day = () => {
   return (
     <>
       <h3>Day{day}</h3>
+      {words.length === 0 && <span>Loading•••</span>}
       <table>
         <tbody>
           {words.map((word) => (
@@ -16,9 +17,14 @@ const Day = () => {
           ))}
         </tbody>
       </table>
-      <Link to="/">
-        <button className="backbtn">돌아가기</button>
-      </Link>
+      <div className="btnwrap">
+        <Link to="/create_word">
+          <button className="backbtn">단어추가</button>
+        </Link>
+        <Link to="/">
+          <button className="backbtn">돌아가기</button>
+        </Link>
+      </div>
     </>
   );
 };

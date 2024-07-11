@@ -19,6 +19,10 @@
     {
       "id": "0720",
       "day": 5
+    },
+    {
+      "id": "562c",
+      "day": 6
     }
   ],
   "words": [
@@ -111,6 +115,13 @@
       "day": "1",
       "eng": "clock",
       "kor": "시계",
+      "isDone": false
+    },
+    {
+      "id": "2cf9",
+      "day": "5",
+      "eng": "watch",
+      "kor": "손목시계",
       "isDone": false
     }
   ]

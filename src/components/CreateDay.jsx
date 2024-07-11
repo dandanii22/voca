@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 
 const CreateDay = () => {
@@ -7,7 +7,6 @@ const CreateDay = () => {
   const navigate = useNavigate();
   const addDay = (e) => {
     e.preventDefault();
-
     fetch(`http://localhost:3001/days`, {
       method: "POST",
       headers: {
@@ -27,6 +26,9 @@ const CreateDay = () => {
     <div>
       <h3>현재 일수 : {days.length} </h3>
       <button onClick={addDay}>Day 추가</button>
+      <Link to="/">
+        <button className="closebtn">취소</button>
+      </Link>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import useFetch from "../hooks/useFetch";
 import { useNavigate } from "react-router-dom";
 
@@ -9,7 +9,7 @@ const CreateWord = () => {
   const onSubmit = (e) => {
     e.preventDefault();
 
-    fetch(`http://localhost:3001/words`, {
+    fetch(`http://localhost:3001/words/`, {
       method: "POST",
       headers: {
         "Content-Type": "apllication/json",
