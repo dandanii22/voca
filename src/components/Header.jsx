@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className="header">
-      <Link to="/">
+      <Link to="/voca">
         <h1>VOCA 영단어</h1>
       </Link>
       <div className="menu">
