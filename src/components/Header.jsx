@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div className="header">
       <Link to="/">
-        <h1>토익 영단어 (고급)</h1>
+        <h1>VOCA 영단어</h1>
       </Link>
       <div className="menu">
         <Link to="/create_word">단어추가</Link>

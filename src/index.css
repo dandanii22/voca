@@ -40,6 +40,17 @@ a {
   right: 0;
 }
 
+.header .menu a {
+  padding: 20px 10px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #ffee58;
+}
+.header .menu a:first-child {
+  margin-right: 20px;
+}
+
 .header .link {
   border: 1px solid #333;
   padding: 10px;
@@ -73,6 +84,7 @@ a {
 table {
   border-collapse: collapse;
   width: 100%;
+  position: relative;
 }
 table td {
   width: 25%;
@@ -95,6 +107,12 @@ table td:first-child {
   margin-left: 10px;
   color: #fff;
   background-color: firebrick;
+}
+
+.backbtn {
+  margin-top: 30px;
+  position: absolute;
+  right: 450px;
 }
 
 button {

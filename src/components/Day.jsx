@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Word from "./Word";
 import useFetch from "../hooks/useFetch";
 
@@ -16,6 +16,9 @@ const Day = () => {
           ))}
         </tbody>
       </table>
+      <Link to="/">
+        <button className="backbtn">돌아가기</button>
+      </Link>
     </>
   );
 };
