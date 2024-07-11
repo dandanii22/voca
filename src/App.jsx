@@ -9,9 +9,10 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Header />
-        <DayList />
         <Routes>
+          <Route path="/" element={<Header />}>
+            <Route index element={<DayList />} />
+          </Route>
           <Route path="/day/:day" element={<Day />} />
           <Route path="/create_word" element={<CreateWord />} />
           <Route path="/create_day" element={<CreateDay />} />
