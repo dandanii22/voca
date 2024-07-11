@@ -1,8 +1,21 @@
 /* eslint-disable react/prop-types */
+import React from "react";
 import { useState } from "react";
 
+interface IProps {
+  word: IWord;
+}
+
+export interface IWord {
+  id: number;
+  day: string;
+  eng: string;
+  kor: string;
+  isDone: boolean;
+}
+
 // word 새로운 변수명인 w로 받음
-const Word = ({ word: w }) => {
+const Word = ({ word: w }: IProps) => {
   const [word, setWord] = useState(w);
   const [isShow, setIsShow] = useState(false);
   const [isDone, setIsDone] = useState(word.isDone);
@@ -38,7 +51,10 @@ const Word = ({ word: w }) => {
       }).then((res) => {
         if (res.ok) {
           //id를 0으로 해주는 이유가 뭐지
-          setWord({ id: 0 });
+          setWord({
+            ...word,
+            id: 0,
+          });
         }
       });
     }
