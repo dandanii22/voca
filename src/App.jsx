@@ -11,7 +11,7 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/voca" element={<DayList />} />
+          <Route path="/" element={<DayList />} />
           <Route path="/day/:day" element={<Day />} />
           <Route path="/create_word" element={<CreateWord />} />
           <Route path="/create_day" element={<CreateDay />} />
