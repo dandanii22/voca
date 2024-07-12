@@ -8,7 +8,9 @@ export interface IDay {
   day: string;
 }
 const CreateWord = () => {
-  const days: IDay[] = useFetch("http://localhost:3001/days");
+  const days: IDay[] = useFetch(
+    "https://wave-thinkable-vacation.glitch.me/days"
+  );
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
 
@@ -20,7 +22,7 @@ const CreateWord = () => {
       const day = dayRef.current.value;
       const eng = engRef.current.value;
       const kor = korRef.current.value;
-      fetch(`http://localhost:3001/words/`, {
+      fetch(`https://wave-thinkable-vacation.glitch.me/words/`, {
         method: "POST",
         headers: {
           "Content-Type": "apllication/json",

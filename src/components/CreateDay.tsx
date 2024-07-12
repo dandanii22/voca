@@ -4,12 +4,14 @@ import React from "react";
 import { IDay } from "./CreateWord";
 
 const CreateDay = () => {
-  const days: IDay[] = useFetch("http://localhost:3001/days");
+  const days: IDay[] = useFetch(
+    "https://wave-thinkable-vacation.glitch.me/days"
+  );
 
   const navigate = useNavigate();
   const addDay = (e: React.FormEvent) => {
     e.preventDefault();
-    fetch(`http://localhost:3001/days`, {
+    fetch(`https://wave-thinkable-vacation.glitch.me/days`, {
       method: "POST",
       headers: {
         "Content-Type": "apllication/json",

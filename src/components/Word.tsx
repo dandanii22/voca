@@ -24,7 +24,7 @@ const Word = ({ word: w }: IProps) => {
   };
   const toggleDone = () => {
     //setIsDone(!isDone);
-    fetch(`http://localhost:3001/words/${word.id}`, {
+    fetch(`https://wave-thinkable-vacation.glitch.me/words/${word.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "apllication/json",
@@ -46,7 +46,7 @@ const Word = ({ word: w }: IProps) => {
 
   const onDel = () => {
     if (window.confirm("삭제하시겠습니까?")) {
-      fetch(`http://localhost:3001/words/${word.id}`, {
+      fetch(`https://wave-thinkable-vacation.glitch.me/words/${word.id}`, {
         method: "DELETE",
       }).then((res) => {
         if (res.ok) {
