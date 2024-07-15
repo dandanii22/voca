@@ -6,7 +6,7 @@ import React from "react";
 const Day = () => {
   const { day } = useParams<{ day: string }>();
   const words: IWord[] = useFetch(
-    `https://wave-thinkable-vacation.glitch.me/words?day=${day}`
+    `https://beryl-natural-borogovia.glitch.me/words?day=${day}`
   );
 
   return (
