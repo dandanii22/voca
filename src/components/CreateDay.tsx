@@ -5,13 +5,13 @@ import { IDay } from "./CreateWord";
 
 const CreateDay = () => {
   const days: IDay[] = useFetch(
-    "https://beryl-natural-borogovia.glitch.me/days"
+    "https://wave-thinkable-vacation.glitch.me/days"
   );
 
   const navigate = useNavigate();
   const addDay = (e: React.FormEvent) => {
     e.preventDefault();
-    fetch(`https://beryl-natural-borogovia.glitch.me/days`, {
+    fetch(`https://wave-thinkable-vacation.glitch.me/days`, {
       method: "POST",
       headers: {
         "Content-Type": "apllication/json",

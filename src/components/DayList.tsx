@@ -5,7 +5,7 @@ import { IDay } from "./CreateWord";
 
 const DayList = () => {
   const days: IDay[] = useFetch(
-    "https://beryl-natural-borogovia.glitch.me/days"
+    "https://wave-thinkable-vacation.glitch.me/days"
   );
 
   if (days.length === 0) {
